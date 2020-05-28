@@ -25,10 +25,10 @@
 ## Working ScreenShot
 
 ### Home Screen & Loading Screen
-<img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FloadingGif1.gif?alt=media&token=d2c3d39b-89e2-4ed9-9ecf-a7c4276f8997" height="400" width="200"> <img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FScreenshot_20200528-162007.jpg?alt=media&token=4e6c4888-4c6d-4482-9cc4-4edb16288c0b" height="400" width="200"> With Dark Mode  <img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FScreenshot_20200528-162011.jpg?alt=media&token=67b797ec-e54d-4fbd-92d7-676abc829853" height="400" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FloadingGif1.gif?alt=media&token=d2c3d39b-89e2-4ed9-9ecf-a7c4276f8997" height="400" width="200"> 
+With Dark Mode  <img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FScreenshot_20200528-162011.jpg?alt=media&token=67b797ec-e54d-4fbd-92d7-676abc829853" height="400" width="200">
 
-### Profile Screen
-<img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2Fprofilewithdarkmode.gif?alt=media&token=15596612-8fea-4cda-b820-9df6987196c4" height="400" width="200"><img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FScreenshot_20200528-162007.jpg?alt=media&token=4e6c4888-4c6d-4482-9cc4-4edb16288c0b" height="400" width="200">
+### Profile Screen<img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FScreenshot_20200528-162007.jpg?alt=media&token=4e6c4888-4c6d-4482-9cc4-4edb16288c0b" height="400" width="200">
 
 ### Message Screen & UserList
 <img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2Fmessagelist.gif?alt=media&token=a6f8d933-9ae4-488f-afe0-50862f5c6583" height="400" width="200"><img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FScreenshot_20200528-162034.jpg?alt=media&token=e70e88ae-e334-4d2a-8440-90807cb66d7b" height="400" width="200"><img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FUserlist.gif?alt=media&token=4142a317-34b7-433f-a1d6-99c3fbb3ffce" height="400" width="200">
