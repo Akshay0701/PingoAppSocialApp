@@ -38,44 +38,14 @@
 
 
 # ABSTRACT 
-
-The evolution of wireless portable technology, such as smart phones, has led to radical 
-development in the educational area. 
-This project is about V-Share application that allows users to donate 
-educational resources to different schools and NGOs that provides free education to 
-children’s. This capstone project aims toward developing an efficient and user-friendly 
-android application that will be able to provide NGOs and Schools, staffs that are useful 
-for students with all the needed material being used during education. It is an android app 
-that allows users to login and register themselves where they can simply donate the 
-materials which they want to provide to the needy children effortlessly. Thereafter the 
-login and registration process, a commander will be reporting to the registered user’s 
-locality where the users will be provided a bag/pouch in which they are allowed donate the 
-materials as they want. 
-At the same time users will be provided a tracking ID in the application 
-through which they can track the activities that is being processed. Once the donation 
-process is completed, the commander will be reporting to the head of the process for further 
-process. Thus, it gives authentication to the users that the donated materials are being 
-donated properly to the needy or the receivers. 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. receivers. 
 
 
 ### Importance of the Project: -
-Our app provides an interface between the donor and the receiver. So, the
-main of our project is that it allows users or the donors to donate the resources to
-the people effortlessly. They can simply donate the materials in a bag which will be
-provided by the commanders to them.
-Thereafter the donation process, the donor will get complete information
-with a confirmation where his donated material is being donated. It will also provide
-secured authentication to the donor that resources are being delivered properly.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 
 ## Need of this application: -
-The need of our application is that it serves as a medium to the donor to
-donate resource through the app. One can donate the resources, easily from their
-home. Whenever a donor donates, he will get complete information with a
-confirmation where his donated materials is delivered or donated.
-There is no fear of misplacement of the donated resources, as the
-application provides a secured authentication to the donors. The donor can easily
-donate the materials to the reporting commander without any fear. This application
-provides the user a tracking ID to the donors to the donated materials.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 
