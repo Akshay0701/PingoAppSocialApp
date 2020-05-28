@@ -25,7 +25,7 @@
 ## Working ScreenShot
 
 ### Home Screen & Loading Screen
-<img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FloadingGif1.gif?alt=media&token=d2c3d39b-89e2-4ed9-9ecf-a7c4276f8997" height="400" width="300"> <img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2Fhomepage.gif?alt=media&token=a68ceaf7-f175-490c-bb1d-f45d79184981" height="400" width="200"> With Dark Mode  <img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FScreenshot_20200528-162011.jpg?alt=media&token=67b797ec-e54d-4fbd-92d7-676abc829853" height="400" width="200">
+<img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FloadingGif1.gif?alt=media&token=d2c3d39b-89e2-4ed9-9ecf-a7c4276f8997" height="400" width="200"> <img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FScreenshot_20200528-162007.jpg?alt=media&token=4e6c4888-4c6d-4482-9cc4-4edb16288c0b" height="400" width="200"> With Dark Mode  <img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FScreenshot_20200528-162011.jpg?alt=media&token=67b797ec-e54d-4fbd-92d7-676abc829853" height="400" width="200">
 
 ### Profile Screen
 <img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2Fprofilewithdarkmode.gif?alt=media&token=15596612-8fea-4cda-b820-9df6987196c4" height="400" width="200"><img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2FScreenshot_20200528-162007.jpg?alt=media&token=4e6c4888-4c6d-4482-9cc4-4edb16288c0b" height="400" width="200">
