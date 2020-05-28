@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/messageLayout"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        >
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_us_dark"
+            android:id="@+id/profileIv"
+            app:c_border_color="@null"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_receiver"
+            android:id="@+id/message_Tv"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/message_Iv"
+            android:adjustViewBounds="true"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+
+            android:layout_height="200dp"
+            android:src="@drawable/ic_image_black"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeIv"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:text="02/03/2019"/>
+        
+        
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/isseenTv"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="end"
+        android:visibility="gone"
+        android:textAlignment="textEnd"
+        android:text="delerverd"/>
+
+
+
+
+</LinearLayout>

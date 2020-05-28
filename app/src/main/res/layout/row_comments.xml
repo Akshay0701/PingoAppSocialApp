@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/colorAccent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/avatarIv"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_us_dark"></com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Akshay"
+            android:visibility="gone"
+            android:id="@+id/nameTv"
+            android:layout_toRightOf="@+id/avatarIv"
+            android:textSize="16dp"
+            android:textColor="@color/daynight_textColor2"
+            android:textStyle="bold"
+            ></TextView>
+        <TextView
+            android:id="@+id/commentTv"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/commentback"
+            android:text="this is comment"
+            android:layout_below="@+id/nameTv"
+            android:layout_toEndOf="@+id/avatarIv"
+            android:layout_toRightOf="@+id/avatarIv"
+            android:textColor="@color/daynight_textColor2"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:id="@+id/timeTv"
+            android:text="20-1-19"
+            android:layout_toEndOf="@+id/avatarIv"
+            android:layout_below="@+id/commentTv"
+            android:layout_toRightOf="@+id/avatarIv"></TextView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

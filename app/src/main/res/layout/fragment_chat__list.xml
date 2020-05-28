@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    tools:context=".Chat_ListFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row_chatlist"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      />
+   <!-- <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_loop="true"
+        app:lottie_fileName="animatechatlistpingo.json"
+        android:layout_alignParentBottom="true"
+        app:lottie_autoPlay="true"
+        ></com.airbnb.lottie.LottieAnimationView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_fileName="chatlistpingo.json"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        app:lottie_autoPlay="true"
+        android:scaleType="centerCrop"
+        app:lottie_loop="true"
+        android:id="@+id/lottie1"
+        android:layout_height="150dp"></com.airbnb.lottie.LottieAnimationView>
+-->
+
+</RelativeLayout>

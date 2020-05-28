@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:transitionName="avatarIv"
+    android:background="#383838"
+    android:layout_height="match_parent"
+    tools:context=".ShowStory">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/storyimg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image_black"
+        android:layout_height="match_parent"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="30dp"
+                android:id="@+id/back"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:drawableEnd="@drawable/ic_back_light"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/ic_cancel_dark"></Button>
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:layout_width="60dp"
+                android:src="@drawable/ic_us_dark"
+                android:id="@+id/dpimg"
+                android:layout_margin="10dp"
+                android:layout_height="60dp"></com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+
+            <TextView
+                android:id="@+id/uNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Akshay Jadhav"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/skip"
+            android:layout_height="match_parent"></View>
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/reverse"
+                android:layout_height="match_parent"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="top"
+        android:layout_marginTop="8dp"
+        android:id="@+id/stories"
+        tools:ignore="MissingConstraints"></jp.shts.android.storiesprogressview.StoriesProgressView>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:padding="100dp"
+        android:visibility="gone"
+        android:background="@color/colorgray"
+        android:id="@+id/progress_bar"
+        android:layout_height="match_parent"></ProgressBar>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:id="@+id/r_seen"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="45dp"
+            android:id="@+id/story_view"
+            android:src="@drawable/ic_eye_green"
+            android:layout_height="50dp"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seen_number"
+                android:text="0"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_gravity="center_vertical"
+                android:textColor="#fff"></TextView>
+        </LinearLayout>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/story_delete"
+                android:src="@drawable/ic_delete_green"
+                android:layout_height="50dp"></ImageView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

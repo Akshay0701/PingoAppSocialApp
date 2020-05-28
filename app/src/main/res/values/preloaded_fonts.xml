@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/asset</item>
+        <item>@font/bungee</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/jacques_francois_shadow</item>
+        <item>@font/poppins_light</item>
+    </array>
+</resources>

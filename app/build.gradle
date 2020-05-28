@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.pingoapp"
+        minSdkVersion 17
+        multiDexEnabled true
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+
+    implementation 'com.github.mohammadatif:CircularImageView:1.0.0'
+
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //asumatirx
+   // implementation 'com.felipecsl.asymmetricgridview:library:2.0.1'
+
+    //photoview libearrr for zoom in and zoom out
+  //  implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'com.fenchtose.nocropper:nocropper:0.3.1';
+
+    //navigation
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.3'
+
+    //story
+    implementation 'com.github.shts:StoriesProgressView:3.0.0'
+
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-core:17.2.1'
+
+    implementation "androidx.cardview:cardview:1.0.0"
+
+//google implement
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.5'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.2.1'
+    implementation 'androidx.navigation:navigation-ui:2.2.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+    //refreshh rate hai be
+    implementation 'com.baoyz.pullrefreshlayout:library:1.2.0'
+
+    //scaleable video
+    implementation 'com.yqritc:android-scalablevideoview:1.0.4'
+
+    //swipedecorator recycler
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.2.2'
+    //swipebut liitl bit diffre in this we can make swipe left right  like tinder feature
+    implementation 'com.yuyakaido.android:card-stack-view:2.3.4'
+    //story
+    implementation 'com.github.shts:StoriesProgressView:3.0.0'
+
+    //for circular menu
+    compile 'com.nightonke:boommenu:2.1.1'
+
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    //animation
+    implementation "com.airbnb.android:lottie:3.3.1"
+
+    //tutorial for starting
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.13.0'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

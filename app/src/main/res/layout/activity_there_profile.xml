@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+
+    tools:context=".ThereProfileActivity">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refresh"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="405dp">
+                    <LinearLayout
+                        android:background="@drawable/graintback"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/backimg"
+                                android:transitionName="backimg"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent">
+
+                            </ImageView>
+                            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                                android:layout_marginTop="45dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="150dp"
+                                android:transitionName="avatarIv"
+                                app:c_border_color="@color/colorPrimaryDark"
+                                android:id="@+id/avatarIV"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="150dp"
+                                android:src="@drawable/ic_us_dark"/>
+                            <Button
+
+                                android:id="@+id/follow_unfollowBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_below="@id/avatarIV"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:text="Follow"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:background="@drawable/buttondesign"
+                                android:layout_height="wrap_content"></Button>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/nameTv2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/profileIv"
+
+
+                                android:textStyle="bold"
+
+                                android:textSize="21sp"/>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="400dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/cardview"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardBackgroundColor="@color/colorAccent"
+                        app:cardMaxElevation="12dp"
+                        app:cardElevation="12dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="275dp">
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="monospace"
+                                    android:text="Name"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/nameTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="serif-monospace"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Akshay "
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="monospace"
+                                    android:text="Email"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/emailTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="serif-monospace"
+                                    android:padding="10dp"
+                                    android:paddingTop="10dp"
+                                    android:text="jadhavaksam@hmaisdasasd"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="monospace"
+                                    android:text="Phone"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/phoneTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="serif-monospace"
+                                    android:padding="10dp"
+                                    android:paddingTop="10dp"
+                                    android:text="360342323342"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                      </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/recyclerview_posts"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+

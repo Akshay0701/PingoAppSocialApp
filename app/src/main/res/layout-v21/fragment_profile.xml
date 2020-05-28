@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbar"
+        tools:targetApi="lollipop">
+        <RelativeLayout
+            android:layout_marginTop="0dp"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/imagetoolbar"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pingowhitelogo"
+                android:layout_height="50dp"></ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/darkmode"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerInside"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:layout_toStartOf="@+id/message"
+                android:src="@drawable/ic_dark_green"
+                android:layout_height="50dp"></ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/message"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerInside"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_message_green"
+                android:layout_height="50dp"></ImageView>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <com.baoyz.widget.PullRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refresh"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="405dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="20dp"
+                        app:cardBackgroundColor="@color/switchColor"
+                        app:cardMaxElevation="20dp"
+                        android:id="@+id/cardview">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/graintback"
+                            android:layout_height="300dp">
+
+                            <Button
+                                android:id="@+id/logout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_below="@+id/avatarIV"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/button2"
+                                android:fontFamily="sans-serif"
+                                android:text="Logout"
+                                android:textAlignment="center"
+                                android:textColor="#fff"
+                                android:textSize="18dp"
+                                android:textStyle="bold"></Button>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/backimg"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent">
+
+                            </ImageView>
+                            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                                android:layout_marginTop="45dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="150dp"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/avatarIV"
+                                android:layout_height="150dp"
+                                android:src="@drawable/ic_us_dark"/>
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/nameTv2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/profileIv"
+
+
+                                android:textStyle="bold"
+
+                                android:textSize="21sp"/>
+
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="15dp"
+                        app:cardMaxElevation="15dp"
+                        android:layout_marginTop="-10dp"
+                        android:layout_below="@+id/cardview"
+                        android:id="@+id/followsection"
+                        app:cardBackgroundColor="@color/switchColor2"
+                        android:layout_centerHorizontal="true">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:background="@color/switchColor2"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:text="Photos"
+                                    android:textColor="@color/daynight_textColor2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/no_photo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:paddingTop="10dp"
+                                    android:text="125"
+                                    android:textColor="@color/daynight_textColor2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:text="Followers"
+                                    android:textColor="@color/daynight_textColor2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/no_followers"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:paddingTop="10dp"
+                                    android:text="1205"
+                                    android:textColor="@color/daynight_textColor2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:text="Following"
+                                    android:textColor="@color/daynight_textColor2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/no_followings"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:paddingTop="10dp"
+                                    android:text="360"
+                                    android:textColor="@color/daynight_textColor2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--  <androidx.cardview.widget.CardView
+                       android:layout_width="400dp"
+                       android:layout_height="112dp"
+                       android:id="@+id/cardview1"
+                       app:cardBackgroundColor="@color/colorAccent"
+                       android:layout_centerHorizontal="true"
+                       android:layout_marginTop="275dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="horizontal"
+                           android:weightSum="3">
+
+                           <LinearLayout
+                               android:gravity="center"
+                               android:orientation="vertical"
+                               android:layout_width="0dp"
+                               android:layout_weight="1"
+                               android:layout_height="match_parent">
+                               <TextView
+                                   android:textColor="@color/colorPrimaryDark"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Name"
+                                   android:textStyle="bold"
+                                   android:textSize="20sp"
+                                   />
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="40dp"
+                                   android:text="Akshay Vilas Jadhav asdas"
+                                   android:id="@+id/nameTv"
+                                   android:padding="10dp"
+                                   android:layout_gravity="center"
+                                   android:gravity="center"
+                                   android:textSize="15dp"
+                                   android:paddingTop="10dp"
+                                   android:textColor="@color/colorPrimaryDark"/>
+
+                           </LinearLayout>
+                           <LinearLayout
+                               android:gravity="center"
+                               android:orientation="vertical"
+                               android:layout_width="0dp"
+                               android:layout_weight="1"
+                               android:layout_height="match_parent">
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Email"
+                                   android:textColor="@color/colorPrimaryDark"
+
+                                   android:textStyle="bold"
+                                   android:textSize="20sp"
+                                   />
+                               <TextView
+                                   android:textColor="@color/colorPrimaryDark"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="40dp"
+                                   android:text="jadhavakshay0701@.com"
+                                   android:id="@+id/emailTv"
+                                   android:gravity="center"
+
+                                   android:layout_gravity="center"
+                                   android:textSize="15dp"
+                                   android:padding="10dp"
+                                   android:paddingTop="10dp"
+                                   />
+
+                           </LinearLayout>
+                           <LinearLayout
+                               android:gravity="center"
+                               android:orientation="vertical"
+                               android:layout_width="0dp"
+                               android:layout_weight="1"
+                               android:layout_height="match_parent">
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Phone"
+                                   android:textColor="@color/colorPrimaryDark"
+                                   android:textStyle="bold"
+                                   android:textSize="20sp"
+                                   />
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="40dp"
+                                   android:text="9082993792"
+                                   android:id="@+id/phoneTv"
+                                   android:layout_gravity="center"
+                                   android:textSize="15dp"
+                                   android:padding="10dp"
+                                   android:paddingTop="10dp"
+                                   android:textColor="@color/colorPrimaryDark"/>
+
+                           </LinearLayout>
+                       </LinearLayout>
+
+
+                   </androidx.cardview.widget.CardView> -->
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/recyclerview_posts"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/followsection"
+                        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+        </ScrollView>
+    </com.baoyz.widget.PullRefreshLayout>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_add_Story"
+        android:src="@drawable/ic_addpost_green"
+        android:visibility="gone"
+        android:layout_above="@+id/fab_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_edit"
+        android:src="@drawable/ic_edit_green"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        />
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        app:bmb_normalColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:bmb_buttonEnum="simpleCircle"
+        android:layout_alignParentRight="true"
+        app:bmb_piecePlaceEnum="piecePlace_dot_3_1"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_3_1"
+    />
+   <!-- <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_fileName="profilepingo.json"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+
+        app:lottie_autoPlay="true"
+        android:scaleType="centerCrop"
+        app:lottie_loop="true"
+        android:id="@+id/lottie"
+        android:layout_height="150dp"></com.airbnb.lottie.LottieAnimationView>
+
+-->
+
+</RelativeLayout>

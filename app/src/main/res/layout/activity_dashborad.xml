@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".DashBoradActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:background="@color/colorAccent">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:id="@+id/toolbar"
+            tools:targetApi="lollipop">
+            <RelativeLayout
+                android:layout_marginTop="0dp"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/imagetoolbar"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/pingowhitelogo"
+                    android:layout_height="50dp"></ImageView>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/darkmode"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerInside"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:layout_toStartOf="@+id/message"
+                    android:src="@drawable/ic_dark_green"
+                    android:layout_height="50dp"></ImageView>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/message"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerInside"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_message_green"
+                    android:layout_height="50dp"></ImageView>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+   <!-- <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/pingowhitelogo"
+                android:scaleType="centerCrop"
+                ></ImageView>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_send_dark"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/content1">
+
+    </FrameLayout>
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:menu="@menu/menu_nav"
+        app:backgroundColor="@color/dashboradcolor"
+        app:indicatorColor="@color/grren2"
+        app:textColor="@color/daynight_textColor2"
+        android:visibility="gone"
+        app:iconSize="20dp"
+        app:iconTint="@color/daynight_textColor2"
+        app:duration="2" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:background="@color/dashboradcolor"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_nav"
+        android:layout_gravity="bottom"
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

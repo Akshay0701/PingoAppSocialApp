@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <com.baoyz.widget.PullRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/refresh"
+            android:layout_below="@+id/bar"
+            app:refreshType="water_drop"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--  <com.airbnb.lottie.LottieAnimationView
+                          android:layout_width="match_parent"
+                          android:layout_centerHorizontal="true"
+                          app:lottie_fileName="animatechatlistpingo.json"
+                          android:rotation="180"
+                          app:lottie_autoPlay="true"
+                          android:scaleType="centerCrop"
+                          app:lottie_loop="true"
+                          android:id="@+id/lottie"
+                          android:layout_height="40dp"></com.airbnb.lottie.LottieAnimationView>
+                          -->
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:id="@+id/mn"
+                        android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/storyRecycleView"
+                            android:layout_margin="5dp"
+                            android:background="@null"
+                            android:nestedScrollingEnabled="false"
+                            android:layout_height="wrap_content"/>
+                    </androidx.core.widget.NestedScrollView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/mn"
+                        android:nestedScrollingEnabled="false"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        android:id="@+id/postRecycleView"
+                        android:layout_height="wrap_content"/>
+
+                    <!--   <com.airbnb.lottie.LottieAnimationView
+                           android:layout_width="match_parent"
+                           android:layout_below="@+id/postRecycleView"
+                           app:lottie_fileName="underdeveloppinggo.json"
+                           app:lottie_loop="true"
+                           app:lottie_autoPlay="true"
+                           android:layout_height="299dp"></com.airbnb.lottie.LottieAnimationView>
+                           -->
+                </RelativeLayout>
+            </ScrollView>
+
+
+        </com.baoyz.widget.PullRefreshLayout>
+        <!--
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            app:lottie_fileName="homepingo.json"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            app:lottie_autoPlay="true"
+            android:scaleType="centerCrop"
+            app:lottie_loop="true"
+            android:id="@+id/lottie1"
+            android:layout_height="150dp"></com.airbnb.lottie.LottieAnimationView>
+
+            -->
+    </LinearLayout>
+    <!--
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_fileName="homepingo.json"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        app:lottie_autoPlay="true"
+        android:scaleType="centerCrop"
+        app:lottie_loop="true"
+        android:id="@+id/lottie1"
+        android:layout_height="150dp"></com.airbnb.lottie.LottieAnimationView>
+
+        -->
+
+
+</RelativeLayout>

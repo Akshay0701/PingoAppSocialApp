@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:id="@+id/cardview"
+    app:cardPreventCornerOverlap="true"
+    app:cardMaxElevation="12dp"
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    app:cardBackgroundColor="@color/colorAccent"
+    android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:background="@color/colorAccent"
+            android:layout_width="150dp"
+            android:layout_height="160dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nametv"
+                android:layout_alignParentBottom="true"
+                android:text="Akshay Jadhav"
+                android:textColor="@color/daynight_textColor2"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/backimg"
+                android:layout_width="150dp"
+                android:transitionName="backimg"
+                android:src="@drawable/ic_us_dark"
+                android:scaleType="centerCrop"
+                android:layout_height="160dp"></ImageView>
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="100dp"
+            android:id="@+id/avatarIv"
+            android:layout_centerInParent="true"
+            android:transitionName="avatarIv"
+            app:c_border_color="@color/colorPrimaryDark"
+            app:c_border_width="2dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_us_dark"
+            />
+
+        </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".UsersFragment">
+    <com.baoyz.widget.PullRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refresh"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <!-- TODO: Update blank fragment layout -->
+   <!-- <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        app:lottie_fileName="animateuserpingo.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        ></com.airbnb.lottie.LottieAnimationView>
+        -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="10dp"
+                android:text="An app description is an app store optimized product definition. It greatly influences your product's success. There are three components of an app's 'definition': its Name, its Description in the marketplace, and Screenshots."
+                android:textColor="@color/daynight_textColor2"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/join_us"
+                android:background="@drawable/buttondesign"
+                android:fontFamily="@font/bungee"
+                android:lineSpacingExtra="10dp"
+                android:text="Join Us"
+                android:textColor="#EDEDED"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:typeface="normal"></Button>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <!-- tis is user section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/bungee_shade"
+        android:text="Users"
+        android:textColor="@color/daynight_textColor2"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/mn"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:id="@+id/users_regulerview"
+            android:layout_margin="5dp"
+            tools:listitem="@layout/row_user"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="wrap_content"/>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <!-- tis is post section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/bungee_shade"
+        android:text="Posts"
+        android:textColor="@color/daynight_textColor2"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_marginTop="20dp"
+       android:visibility="gone"
+       app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+       tools:listitem="@layout/row_posts"
+       android:layout_height="500dp"
+       android:background="@color/colorAccent"
+       android:id="@+id/postRecycleView"></androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
+    </ScrollView>
+    </com.baoyz.widget.PullRefreshLayout>
+</LinearLayout>

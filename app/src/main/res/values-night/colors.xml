@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#43B54A</color>
+    <color name="colorPrimaryDark">#252525</color>
+    <color name="colorAccent">#353535</color>
+    <color name="orange">#ff8200</color>
+    <color name="orangeDark">#f77000</color>
+    <color name="daynight_textColor">#FFFFFF</color>
+    <color name="colorPrimary2">#43B54A</color>
+    <color name="grren2">#9A52E15B</color>
+    <color name="colorPrimaryDark2">#252525</color>
+    <color name="colorren">#C4393B</color>
+    <color name="colorgreen">#801E2E2E</color>
+    <color name="dashboradcolor">#252525</color>
+    <color name="colorAccent2">#353535</color>
+    <color name="daynight_textColor2">#FFFFFF</color>
+    <color name="switchColor2">#801E2E2E</color>
+    <color name="switchColor">#FFFFFF</color>
+</resources>

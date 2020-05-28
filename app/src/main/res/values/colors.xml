@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<color name="colorPrimary1">#ec937e</color>
+<color name="colorPrimary">#43B54A</color>
+<color name="colorPrimaryLight">#7CF5B3A6</color>
+<color name="colorPrimaryDark">#252525</color>
+<color name="colorPrimaryDarkLight">#353535</color>
+<color name="colorPrimaryDark3">#1A291A</color>
+<color name="colorAccent">#FFFFFF</color>
+<color name="colorgray">#802E2E2E</color>
+<color name="online">#1A291A</color>
+<color name="offline">#7A7A7A</color>
+<color name="lightgreen">#37953C</color>
+<color name="lightgreen1">#508A50</color>
+
+
+    <color name="grren2">#62EA6A</color>
+    <color name="colorren">#C4393B</color>
+    <color name="colorgreen">#13C451</color>
+    <color name="colorPrimary2">#43B54A</color>
+    <color name="colorPrimaryDark2">#8C8C8C</color>
+    <color name="dashboradcolor">#FFFFFF</color>
+    <color name="colorAccent2">#FFFFFF</color>
+    <color name="daynight_textColor2">#353535</color>
+    <color name="switchColor2">#FFFFFF</color>
+    <color name="switchColor">#353535</color>
+</resources>

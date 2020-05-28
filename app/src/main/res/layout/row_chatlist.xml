@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardElevation="12dp"
+    app:cardMaxElevation="12dp"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <!--image user -->
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_account_dark"
+            android:transitionName="avatarIv"
+            android:id="@+id/profileivIv"
+            ></com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+        <!--image offline online -->
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/onlineStatusIv"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileivIv"
+            android:layout_toRightOf="@id/profileivIv"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start"
+            android:padding="10dp"
+            android:text="His Name"
+            android:textColor="@color/daynight_textColor2"
+            android:textSize="18dp"
+            android:transitionName="backimg"></TextView>
+
+
+        <TextView
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastMessageTv"
+            android:visibility="visible"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/nameTv"
+            android:layout_toEndOf="@id/profileivIv"
+            android:layout_toRightOf="@id/profileivIv"
+            android:text="Last Message">
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

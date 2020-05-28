@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@null"
+    android:transitionName="avatarIv"
+    android:id="@+id/linear"
+    android:layout_width="90dp"
+    android:layout_marginStart="10dp"
+    android:layout_height="100dp">
+
+       <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:layout_width="70dp"
+        app:c_border_color="@color/colorPrimary"
+        android:id="@+id/dpimg"
+           android:layout_gravity="center_horizontal"
+        app:c_border_width="3dp"
+        android:src="@drawable/ic_image_black"
+        android:layout_height="70dp"></com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+
+       <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+           android:layout_width="70dp"
+           app:c_border_color="@color/colorgray"
+           android:id="@+id/storyseen"
+           app:c_border_width="3dp"
+           android:layout_gravity="center_horizontal"
+           android:visibility="gone"
+           android:src="@drawable/ic_image_black"
+           android:layout_height="70dp"></com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:text="akshayjadhav"
+
+           android:maxLines="1"
+           android:id="@+id/stroyusername"
+           android:textColor="@color/daynight_textColor2"
+           android:layout_gravity="center"
+           android:layout_height="wrap_content"></TextView>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dashboradcolor"
+    tools:context=".ChatActivity">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="backimg"
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/switchColor2"
+
+        >
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:transitionName="avatarIv"
+            android:src="@drawable/ic_name_black"
+            android:id="@+id/profileIv"
+            android:scaleType="centerCrop"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+            <TextView
+                android:id="@+id/namettv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:transitionName="backimg"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Name name name"
+                android:textColor="@color/daynight_textColor2"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/onlinestatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:text="Online.."
+                android:textColor="@color/daynight_textColor2"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_regular"
+        android:layout_above="@id/chat_Layout"
+        android:layout_below="@+id/toolbar"
+        ></androidx.recyclerview.widget.RecyclerView>
+<LinearLayout
+    android:id="@+id/chat_Layout"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/switchColor2"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#fff">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/attachBtn"
+        android:src="@drawable/photo"></ImageView>
+
+    <EditText
+        android:id="@+id/message_Et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Type a message"
+        android:inputType="textImeMultiLine"
+        android:padding="15dp"
+        android:textColor="@color/daynight_textColor2"
+        android:textColorHint="@color/daynight_textColor2" />
+    <ImageButton
+        android:layout_width="40dp"
+        android:id="@+id/send_btn"
+        android:background="@null"
+        android:src="@drawable/sendbtn"
+        android:layout_height="40dp"/>
+</LinearLayout>
+
+
+
+</RelativeLayout>

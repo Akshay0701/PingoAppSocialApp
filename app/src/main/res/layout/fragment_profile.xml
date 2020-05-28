@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".ProfileFragment">
+
+
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refresh"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="405dp">
+                    <LinearLayout
+                        android:background="@drawable/graintback"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/backimg"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent">
+
+                            </ImageView>
+                            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                                android:layout_marginTop="45dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="150dp"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/avatarIV"
+                                android:layout_height="150dp"
+                                android:src="@drawable/ic_us_dark"/>
+                            <Button
+                                android:id="@+id/logout"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_below="@id/avatarIV"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Logout"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/daynight_textColor2"
+                                android:background="@drawable/buttondesign"
+                                android:layout_height="wrap_content"></Button>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/nameTv2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/profileIv"
+
+
+                                android:textStyle="bold"
+
+                                android:textSize="21sp"/>
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <!--  <androidx.cardview.widget.CardView
+                       android:layout_width="400dp"
+                       android:layout_height="112dp"
+                       android:id="@+id/cardview1"
+                       app:cardBackgroundColor="@color/colorAccent"
+                       android:layout_centerHorizontal="true"
+                       android:layout_marginTop="275dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="horizontal"
+                           android:weightSum="3">
+
+                           <LinearLayout
+                               android:gravity="center"
+                               android:orientation="vertical"
+                               android:layout_width="0dp"
+                               android:layout_weight="1"
+                               android:layout_height="match_parent">
+                               <TextView
+                                   android:textColor="@color/colorPrimaryDark"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Name"
+                                   android:textStyle="bold"
+                                   android:textSize="20sp"
+                                   />
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="40dp"
+                                   android:text="Akshay Vilas Jadhav asdas"
+                                   android:id="@+id/nameTv"
+                                   android:padding="10dp"
+                                   android:layout_gravity="center"
+                                   android:gravity="center"
+                                   android:textSize="15dp"
+                                   android:paddingTop="10dp"
+                                   android:textColor="@color/colorPrimaryDark"/>
+
+                           </LinearLayout>
+                           <LinearLayout
+                               android:gravity="center"
+                               android:orientation="vertical"
+                               android:layout_width="0dp"
+                               android:layout_weight="1"
+                               android:layout_height="match_parent">
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Email"
+                                   android:textColor="@color/colorPrimaryDark"
+
+                                   android:textStyle="bold"
+                                   android:textSize="20sp"
+                                   />
+                               <TextView
+                                   android:textColor="@color/colorPrimaryDark"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="40dp"
+                                   android:text="jadhavakshay0701@.com"
+                                   android:id="@+id/emailTv"
+                                   android:gravity="center"
+
+                                   android:layout_gravity="center"
+                                   android:textSize="15dp"
+                                   android:padding="10dp"
+                                   android:paddingTop="10dp"
+                                   />
+
+                           </LinearLayout>
+                           <LinearLayout
+                               android:gravity="center"
+                               android:orientation="vertical"
+                               android:layout_width="0dp"
+                               android:layout_weight="1"
+                               android:layout_height="match_parent">
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Phone"
+                                   android:textColor="@color/colorPrimaryDark"
+                                   android:textStyle="bold"
+                                   android:textSize="20sp"
+                                   />
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="40dp"
+                                   android:text="9082993792"
+                                   android:id="@+id/phoneTv"
+                                   android:layout_gravity="center"
+                                   android:textSize="15dp"
+                                   android:padding="10dp"
+                                   android:paddingTop="10dp"
+                                   android:textColor="@color/colorPrimaryDark"/>
+
+                           </LinearLayout>
+                       </LinearLayout>
+
+
+                   </androidx.cardview.widget.CardView> -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="400dp"
+                        android:layout_height="120dp"
+                        app:cardBackgroundColor="@color/switchColor2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="275dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Photos"
+                                    android:textColor="@color/daynight_textColor2"
+                                    android:textSize="20sp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="125"
+                                    android:id="@+id/no_photo"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/daynight_textColor2"
+                                    android:paddingTop="10dp"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Followers"
+                                    android:textColor="@color/daynight_textColor2"
+                                    android:textSize="20sp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1205"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:id="@+id/no_followers"
+                                    android:paddingTop="10dp"
+                                    android:textColor="@color/daynight_textColor2"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Following"
+                                    android:textColor="@color/daynight_textColor2"
+                                    android:textSize="20sp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="360"
+                                    android:textStyle="bold"
+                                    android:id="@+id/no_followings"
+                                    android:textSize="20sp"
+                                    android:paddingTop="10dp"
+                                    android:textColor="@color/daynight_textColor2"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/recyclerview_posts"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+    </com.baoyz.widget.PullRefreshLayout>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_add_Story"
+        android:src="@drawable/ic_addpost_green"
+        android:layout_above="@+id/fab_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_edit"
+        android:src="@drawable/ic_edit_green"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        />
+    <!-- <com.airbnb.lottie.LottieAnimationView
+         android:layout_width="150dp"
+         android:layout_centerHorizontal="true"
+         app:lottie_fileName="profilepingo.json"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentBottom="true"
+
+         app:lottie_autoPlay="true"
+         android:scaleType="centerCrop"
+         app:lottie_loop="true"
+         android:id="@+id/lottie"
+         android:layout_height="150dp"></com.airbnb.lottie.LottieAnimationView>
+
+ -->
+
+</RelativeLayout>
