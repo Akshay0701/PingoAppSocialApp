@@ -1,6 +1,6 @@
 # Pingo    Social Media App    
+![](banner.png)
 
-<img src="https://firebasestorage.googleapis.com/v0/b/shoopyshop-4eb69.appspot.com/o/sample%2Fpingoroundlogo.PNG?alt=media&token=23bc7ca9-8c0b-4c43-a780-c76d710235d6" height="200" width="200">
 
 ### Developed by 
 ### AKSHAY JADHAV 
