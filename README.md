@@ -19,7 +19,6 @@
 ### 10 - Recent Chat (user can view his recent chats).
 ### And many more......
 
-
 ## Working ScreenShot
 
 ### Home Screen & Loading Screen
