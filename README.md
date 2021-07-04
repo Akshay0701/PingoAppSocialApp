@@ -12,8 +12,8 @@
 ### 4 - User Can Edit Post After Posting (also can change image)  
 ### 5 - Follow Other User 
 ### 6 - Chat System 
-### 7 - User Can Share Post On Diffrent Platform 
-### 8 - Password Encrupted With Firebase
+### 7 - User Can Share Post On Different  Platform 
+### 8 - Password Encrypted With Firebase
 ### 9 - Simple Swipe Follow Option
 ### 10 - Recent Chat (user can view his recent chats).
 ### And many more......
