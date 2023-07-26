@@ -1,22 +1,28 @@
 # Pingo    Social Media App    
 ![](banner.png)
-
-### Developed by 
-### AKSHAY JADHAV                                     
+                                   
 ----------------------------------------------------------------------------------------------------------------------------------
 ## App Features
 
-### 1 - Create Account With Google or Firebase Auth
-### 2 - Edit Profile Image And Cover 
-### 3 - Upload Post (With Image Without Image)
-### 4 - User Can Edit Post After Posting (also can change image)  
-### 5 - Follow Other User 
-### 6 - Chat System 
-### 7 - User Can Share Post On Different  Platform 
-### 8 - Password Encrypted With Firebase
-### 9 - Simple Swipe Follow Option
-### 10 - Recent Chat (user can view his recent chats).
-### And many more......
+- Create Account With Google or Firebase Auth
+
+- Edit Profile Image And Cover
+  
+- Upload Post (With Image Without Image)
+  
+- User Can Edit Post After Posting (also can change image)
+  
+- Follow Other User
+  
+- Chat System
+  
+- User Can Share Post On Different Platforms
+  
+- Password Encrypted With Firebase
+  
+- Simple Swipe Follow Option
+  
+- Recent Chat (user can view his recent chats).
 
 ## Working ScreenShot
 
@@ -33,15 +39,21 @@
 
 
 
-# ABSTRACT 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. receivers. 
+
+## Built With 🎯
+**A lot of love and a little Java**
+
+## Contributing 
+
+Make Pull requests which improve the functionality of the application in any sorts. It should conform with the following conditions. 
+* Clear , short , crisp description of the PR. 
+* Should add on to the value of the application.
 
 
-### Importance of the Project: -
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+## Acknowledgments 💖
 
+* To my family👪  and friends 👫 who always kept me motivated.
+* To the community of computer science 💻.
 
-## Need of this application: -
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 
